@@ -14,8 +14,8 @@ const [email,setEmail]=useState("");
 const [password,setPassword]=useState("");   
 return(
     <SafeAreaView style={styles.container}>
-        <Text style={styles.title}>Welcome Back<Text/>
-            <Text style={styles.subtitle}>Login to continue ordering delicious sushi<Text/>
+        <Text style={styles.title}>Welcome Back</Text>
+            <Text style={styles.subtitle}>Login to continue ordering delicious sushi</Text>
             <TextInput
             placeholder="Email Address"
             value={email}
@@ -26,7 +26,7 @@ return(
 
             <TextInput
             placeholder="Password"
-            secureTextEntry=
+            secureTextEntry={true}
             value={password}
             onChangeText={setPassword}
             style={styles.input}
@@ -51,7 +51,7 @@ return(
 
             <TouchableOpacity
             onPress={()=>router.push("/(auth)/register")}>
-                <Text style={styles.signup}>Sign Up<Text/>
+                <Text style={styles.signup}>Sign Up</Text>
             </TouchableOpacity>
             </View>
             </SafeAreaView>
@@ -91,7 +91,7 @@ const styles=StyleSheet.create({
         paddingHorizontal:18,
         marginBottom:18,
         fontSize:16,
-    }
+    },
     forgot:{
         color:"#FF6B4A",
         alignSelf:"flex-end",
