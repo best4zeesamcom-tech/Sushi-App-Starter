@@ -86,6 +86,34 @@ return(
     </ScrollView>
     </KeyboardAvoidingView>
     </SafeAreaView>
-)
-
+);
 }
+const styles=StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:"#fff",
+    },
+    scroll:{
+        paddingBottom:40,
+    },
+    form:{
+        paddingHorizontal:24,
+        marginTop:35,
+    },
+    bottom:{
+        flexDirection:"row",
+        justifyContent:"center",
+        marginTop:35,
+    },
+    text:{
+        fontSize:16,
+        color:"#777",
+    },
+    login:{
+        marginLeft:5,
+        color:"#ff6b4a",
+        fontWeight:"700",
+        fontSize:16,
+    },
+    
+})
