@@ -81,6 +81,11 @@ return(
         Sign In
     </Text>
     </ToucableOpacity>
+    </View>
+    </View>
+    </ScrollView>
+    </KeyboardAvoidingView>
+    </SafeAreaView>
 )
 
 }
