@@ -96,7 +96,7 @@ const styles=StyleSheet.create({
         color:"#FF6B4A",
         alignSelf:"flex-end",
         marginBottom:30,
-    }
+    },
     button:{
         height:58,
         backgroundColor:"#ff6b4a",
