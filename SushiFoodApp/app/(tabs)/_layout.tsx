@@ -1,8 +1,8 @@
 import {Feather,Ionicons,MaterialIcons,} from "@expo/vector-icons"
 import {Tabs} from "expo-router"
-export default fuction TabsLayout(){
+export default function TabsLayout(){
 return(
-    <Tabs
+<Tabs
     screenOptions={{
         headerShown:false,
         tabBarShowLabel:false,
@@ -17,10 +17,11 @@ return(
             elevation:15,
             borderTopWidth:0,
         },
-
-    }}>
+        }}
+    >
     <Tabs.Screen
-    name="home", options:{{tabBarIcon:({focused})=>(
+    name="home"
+    options={{tabBarIcon:({focused})=>(
         <Ionicons
         name={focused?"home":"home-outline"}
         size={28}
@@ -29,8 +30,8 @@ return(
 
 
     <Tabs.Screen
-    name="menu",
-    options:{{tabBarIcon:({focused})=>(
+    name="menu"
+    options={{tabBarIcon:({focused})=>(
         <MaterialIcons
         name="restaurant-menu"
         size={28}
@@ -39,8 +40,8 @@ return(
 
 
         <Tabs.Screen
-    name="orders",
-    options:{{tabBarIcon:({focused})=>(
+    name="orders"
+    options={{tabBarIcon:({focused})=>(
         <Feather
         name="shopping-bag" 
         size={25}
@@ -51,18 +52,17 @@ return(
 
 
      <Tabs.Screen
-    name="profile",
-    options:{{tabBarIcon:({focused})=>(
-        <Feather
-        name="shopping-bag" 
-        size={25}
+    name="profile"
+    options={{tabBarIcon:({focused})=>(
+        <Ionicons
+        name={focused?"person":"person-outline"} 
+        size={27}
         color={focused? "#FF6B4A":"#999"}/>
     )}}/>
-
-
-
-
-
-
-    )
+    </Tabs>);
 }
+
+
+
+
+
