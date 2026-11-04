@@ -92,5 +92,30 @@ const styles=StyleSheet.create({
         marginBottom:18,
         fontSize:16,
     }
-
-})
+    forgot:{
+        color:"#FF6B4A",
+        alignSelf:"flex-end",
+        marginBottom:30,
+    }
+    button:{
+        height:58,
+        backgroundColor:"#ff6b4a",
+        borderRadius:18,
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    buttonText:{
+        color:"#fff",
+        fontWeight:"700",
+        fontSize:18,
+    },
+    bottom:{
+        marginTop:35,
+        flexDirection:"row",
+        justifyContent:"center",
+    },
+    signup:{
+        marginLeft:5,
+        color:"#FF6B4A",
+        fontWeight:"700",
+},});
