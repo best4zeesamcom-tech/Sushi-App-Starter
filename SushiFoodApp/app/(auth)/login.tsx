@@ -15,45 +15,45 @@ const [password,setPassword]=useState("");
 return(
     <SafeAreaView style={styles.container}>
         <Text style={styles.title}>Welcome Back</Text>
-            <Text style={styles.subtitle}>Login to continue ordering delicious sushi</Text>
-            <TextInput
-            placeholder="Email Address"
-            value={email}
-            onChangeText={setEmail}
-            style={styles.input}
-            />
+        <Text style={styles.subtitle}>Login to continue ordering delicious sushi</Text>
+        <TextInput
+        placeholder="Email Address"
+        value={email}
+        onChangeText={setEmail}
+        style={styles.input}/>
 
 
-            <TextInput
-            placeholder="Password"
-            secureTextEntry={true}
-            value={password}
-            onChangeText={setPassword}
-            style={styles.input}
-            />
+        <TextInput
+        placeholder="Password"
+        secureTextEntry={true}
+        value={password}
+        onChangeText={setPassword}
+        style={styles.input}
+        />
 
-            <TouchableOpacity onPress={()=>router.push("/(auth)/forgot-password")}>
+        <TouchableOpacity onPress={()=>router.push("/(auth)/forgot-password")}>
                 <Text style={styles.forgot}>Forgot Password</Text>
-            </TouchableOpacity> 
+        </TouchableOpacity> 
 
 
-            <TouchableOpacity 
-            style={styles.button}
-            onPress={()=>router.replace("/(tabs)/home")}>
-                <Text style={styles.buttonText}>Login</Text>
-            </TouchableOpacity>
+        <TouchableOpacity 
+        style={styles.button}
+        onPress={()=>router.replace("/(tabs)/home")}>
+        <Text style={styles.buttonText}>Login</Text>
+        </TouchableOpacity>
 
 
 
             <View style={styles.bottom}>
-                <Text style={styles.buttonText}>Don't have an account?</Text>
-            </View>   
-
+            <Text style={styles.buttonText}>Don't have an account?</Text>
             <TouchableOpacity
             onPress={()=>router.push("/(auth)/register")}>
-                <Text style={styles.signup}>Sign Up</Text>
+            <Text style={styles.signup}>Sign Up</Text>
             </TouchableOpacity>
-            </View>
+            </View>   
+
+            
+          
             </SafeAreaView>
 
 
