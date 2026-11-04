@@ -24,7 +24,7 @@ return(
         <Ionicons
         name={focused?"home":"home-outline"}
         size={28}
-        color={focused? "FF6B4A":"#999"}/>
+        color={focused? "#FF6B4A":"#999"}/>
     )}}/>
 
 
@@ -32,9 +32,9 @@ return(
     name="menu",
     options:{{tabBarIcon:({focused})=>(
         <MaterialIcons
-        name={focused?"restaurant-menu":"home-outline"}
+        name="restaurant-menu"
         size={28}
-        color={focused? "FF6B4A":"#999"}/>
+        color={focused? "#FF6B4A":"#999"}/>
     )}}/>
 
 
@@ -44,7 +44,19 @@ return(
         <Feather
         name="shopping-bag" 
         size={25}
-        color={focused? "FF6B4A":"#999"}/>
+        color={focused? "#FF6B4A":"#999"}/>
+    )}}/>
+
+
+
+
+     <Tabs.Screen
+    name="profile",
+    options:{{tabBarIcon:({focused})=>(
+        <Feather
+        name="shopping-bag" 
+        size={25}
+        color={focused? "#FF6B4A":"#999"}/>
     )}}/>
 
 
