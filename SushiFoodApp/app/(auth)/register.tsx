@@ -7,7 +7,7 @@ import{
     ScrollView,
     StyleSheet,
     Text,
-    ToucableOpacity,
+    TouchableOpacity,
     View,
 } from "react-native"
 import AuthHeader from "../../components/auth/AuthHeader";
@@ -32,7 +32,7 @@ return(
         behavior={Platform.OS==="ios"?"padding":undefined}
     >
     <ScrollView
-    showVerticalScrollIndicator={false}
+    showsVerticalScrollIndicator={false}
     contentContainerStyle={styles.scroll}
     >
     <AuthHeader
@@ -42,7 +42,7 @@ return(
     <View style={styles.form}>
     <AuthInput
     label="Full Name"
-    placeholder="Jhon Doe"
+    placeholder="John Doe"
     value={name}
     onChangeText={setName}
     />
@@ -74,13 +74,13 @@ return(
     <Text style={styles.text}>
         Already have an account?
     </Text>
-    <ToucableOpacity
+    <TouchableOpacity
     onPress={()=>router.back()}
     >
-    <Text style={style.login}>
+    <Text style={styles.login}>
         Sign In
     </Text>
-    </ToucableOpacity>
+    </TouchableOpacity>
     </View>
     </View>
     </ScrollView>
@@ -115,5 +115,5 @@ const styles=StyleSheet.create({
         fontWeight:"700",
         fontSize:16,
     },
-    
+
 })

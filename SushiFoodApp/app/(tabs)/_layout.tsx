@@ -1,0 +1,1 @@
+import {Feather,Ionicons,MaterialIcons,} from "@expo/vector-icons"
