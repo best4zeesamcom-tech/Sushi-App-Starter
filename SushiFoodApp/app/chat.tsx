@@ -50,5 +50,37 @@ export default function ChatScreen()
     <SafeAreaView style={styles.container}>
     <ChatHeader/>
 
+    <ScrollView
+    style={styles.chatContainer}
+    showsVerticalScrollIndicator={false}
+    contentContainerStyle={styles.content}
+    >
+        {messages.map(()=>(
+            <ChatBubble
+            key={item.id}
+            sender={item.sender as "me" | "driver"}
+            message={item.message}
+            time={item.item}
+            />
+        ))}
+        </ScrollView>
+        <ChatInput/>
+
+        </SafeAreaView>
+        </>
+
     )
 }
+const styles=StyleSheet.create({
+    container:{
+        flex:1,
+        backgroundColor:"#FFFFFF",
+    },
+    chatContainer:{
+        flex:1,
+        marginTop:20,
+    },
+    content:{
+        paddingBottom:110,
+    },
+});
