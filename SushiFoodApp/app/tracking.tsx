@@ -8,7 +8,6 @@ import {
 import BottomDeliveryCard from "../components/tracking/BottomDeliveryCard";
 import InfoBanner from "../components/tracking/InfoBanner";
 import OrderStatusCard from "../components/tracking/OrderStatusCard";
-import OrderStatusCard from "../components/tracking/OrderStatusCard";
 import PromotionCard from "../components/tracking/PromotionCard";
 import TrackingHeader from "../components/tracking/TrackingHeader";
 
