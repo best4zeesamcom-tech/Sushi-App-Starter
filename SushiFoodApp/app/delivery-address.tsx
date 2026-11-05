@@ -6,11 +6,11 @@ import {
     StyleSheet,
     View,
 } from "react-native";
-import AddressCard from "../components/delivey/AddressCard";
-import ConfirmButton from "../components/delivey/ConfirmButton";
-import DeliveryHeader from "../components/delivey/DeliveryHeader";
-import DeliveryMap from "../components/delivey/DeliveryMap";
-import LocationPin from "../components/delivey/LocationPin";
+import AddressCard from "../components/delivery/AddressCard";
+import ConfirmButton from "../components/delivery/ConfirmButton";
+import DeliveryHeader from "../components/delivery/DeliveryHeader";
+import DeliveryMap from "../components/delivery/DeliveryMap";
+import LocationPin from "../components/delivery/LocationPin";
 export default function DeliveryAddressScreen(){
     const router=useRouter();
     return(
