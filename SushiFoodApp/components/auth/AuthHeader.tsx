@@ -30,7 +30,6 @@ const styles=StyleSheet.create({
         fontSize:16,
         lineHeight:24,
         color:"#6b7280",
-
     },
 
 
